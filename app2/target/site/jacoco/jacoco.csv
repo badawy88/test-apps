@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+app Maven Webapp,com,StrutsAction,0,10,0,0,0,2,0,2,0,2
+app Maven Webapp,com,HelloWorldAction,13,0,0,0,4,0,2,0,2,0
+app Maven Webapp,com,HelloWorldForm,0,10,0,0,0,4,0,3,0,3
+app Maven Webapp,com,App,0,12,0,0,0,2,0,2,0,2
+app Maven Webapp,com,Apps,0,7,0,0,0,2,0,2,0,2
+app Maven Webapp,com,LoginAction,0,7,0,0,0,2,0,2,0,2

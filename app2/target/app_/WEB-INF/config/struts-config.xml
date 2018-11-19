@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+    <!-- Spring Struts plugin -->
+    <plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+        <set-property property="contextConfigLocation"
+                      value="/WEB-INF/spring/applicationContext.xml" />
+    </plug-in>
+
+    <form-beans>
+        <form-bean name="helloWorldForm"
+                   type="com.HelloWorldForm"/>
+    </form-beans>
+
+    <action-mappings>
+        <action path="/helloWorld"
+                type="com.HelloWorldAction"
+                name="helloWorldForm">
+            <forward name="success" path="/index.jsp"/>
+
+        </action>
+
+        <action path="/login"
+                type="com.LoginAction"
+        name="helloWorldForm">
+            <forward name="success" path="/index.jsp"/>
+
+        </action>
+    </action-mappings>
+
+</struts-config>
